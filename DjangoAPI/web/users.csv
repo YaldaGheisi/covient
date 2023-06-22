@@ -1,0 +1,4 @@
+email,first_name,last_name,date_of_birth,address,password
+test1@example.com,test1,ln1,,,Test1*123
+test2@example.com,test2,ln2,,,Test2*123
+test3@example.com,test3,ln3,,,Test3*123

@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="btns">
+
+    <div class="mb-3">
+      <label for="formFile" class="form-label">Upload from File</label>
+      <input class="form-control form-control-lg" type="file" id="formFile">
+    </div>
+
+
+
+    <button class="btn btn-primary" (click)="openAddEventForm()">New Event</button>
+
+  </div>
+
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th style="width: 5%; text-align: center;">ID</th>
+          <th style="width: 10%; text-align: center;">Date</th>
+          <th style="width: 10%; text-align: center;">Start Time</th>
+          <th style="width: 10%; text-align: center;">End Time</th>
+          <th style="width: 10%; text-align: center;">Code</th>
+          <th style="width: 15%; text-align: center;">Region</th>
+          <th style="width: 15%; text-align: center;">Parish</th>
+          <th style="width: 15%; text-align: center;">City</th>
+          <th style="width: 10%; text-align: center;">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let event of event_data">
+          <td style="text-align: center;">{{ event.id }}</td>
+          <td style="text-align: center;">{{ event.date }}</td>
+          <td style="text-align: center;">{{ event.start_time }}</td>
+          <td style="text-align: center;">{{ event.end_time }}</td>
+          <td style="text-align: center;">{{ event.code }}</td>
+          <td style="text-align: center;">{{ event.region }}</td>
+          <td style="text-align: center;">{{ event.parish }}</td>
+          <td style="text-align: center;">{{ event.city }}</td>
+          <td style="text-align: center;">
+            <button (click)="deleteEvent(event.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+<!-- <div class="add-event-form" *ngIf="showAddEventForm">
+  <form (submit)="addEvent()">
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input type="date" class="form-control" id="date" required [(ngModel)]="newEvent.date" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="start_time">Start Time:</label>
+      <input type="time" class="form-control" id="start_time" required [(ngModel)]="newEvent.start_time" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="end_time">End Time:</label>
+      <input type="time" class="form-control" id="end_time" required [(ngModel)]="newEvent.end_time" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="code">Code:</label>
+      <input type="text" class="form-control" id="code" required [(ngModel)]="newEvent.code" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="region">Region:</label>
+      <input type="text" class="form-control" id="region" required [(ngModel)]="newEvent.region" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="parish">Parish:</label>
+      <input type="text" class="form-control" id="parish" required [(ngModel)]="newEvent.parish" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" class="form-control" id="city" required [(ngModel)]="newEvent.city" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="location">Location:</label>
+      <input type="text" class="form-control" id="location" required [(ngModel)]="newEvent.location" [ngModelOptions]="{standalone: true}">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div> -->

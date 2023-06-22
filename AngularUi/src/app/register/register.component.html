@@ -1,0 +1,71 @@
+<!-- <div class="container">
+<form class="myForm" [formGroup]="form" >
+
+    <h1 class="h3 mb-3 fw-normal">Please register</h1>
+
+
+    <input formControlName="first_name" class="form-control" placeholder="First name" required>
+    <input formControlName="last_name" class="form-control" placeholder="Last Name" required>
+    <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
+    <input formControlName="address" type="text" class="form-control" placeholder="Address">
+    <input formControlName="password" type="password" class="form-control" placeholder="Password" required>
+    <button class="w-100 btn btn-lg btn-primary" type="button" (click)="submitRegistration()">Register</button>
+  </form>
+</div>
+
+<div class="container">
+  <input type="file" name="fileInput" accept=".csv">
+  <button class="w-100 btn btn-lg btn-primary" type="button" (click)="uploadFile()">Upload File</button>
+</div>
+ -->
+
+ <!-- <div class="container">
+  <form class="myForm" [formGroup]="form">
+    <h1 class="h3 mb-3 fw-normal">Please register</h1>
+    <input formControlName="first_name" class="form-control" placeholder="First name" required>
+    <input formControlName="last_name" class="form-control" placeholder="Last Name" required>
+    <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
+    <input formControlName="address" type="text" class="form-control" placeholder="Address">
+    <input formControlName="password" type="password" class="form-control" placeholder="Password" required>
+    <button class="w-100 btn btn-lg btn-primary" type="button" (click)="submitRegistration()">Register</button>
+  </form>
+
+  <div class="upload-container">
+    <input type="file" name="fileInput" accept=".csv" id="fileInput" onchange="displayFileName()">
+    <label for="fileInput">Choose file</label>
+    <button class="btn btn-lg btn-primary" type="button" (click)="uploadFile()">Upload</button>
+  </div>
+
+  <div id="fileName"></div>
+</div> -->
+
+<div class="signup-form">
+  <form [formGroup]="form">
+  <h2>Register</h2>
+  <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+      <div class="form-group">
+    <div class="row">
+      <div class="col"><input type="text" class="form-control" formControlName="first_name" placeholder="First Name" required="required"></div>
+      <div class="col"><input type="text" class="form-control" formControlName="last_name" placeholder="Last Name" required="required"></div>
+    </div>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" formControlName="email" placeholder="Email" required="required">
+      </div>
+  <div class="form-group">
+          <input type="password" class="form-control" formControlName="password" placeholder="Password" required="required">
+      </div>
+  <div class="form-group">
+          <input type="password" class="form-control" formControlName="confirm_password" placeholder="Confirm Password" required="required">
+      </div>
+      <div class="form-group">
+    <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+  </div>
+  <div class="form-group">
+          <button type="submit" class="btn btn-success btn-lg btn-block" (click)="submitRegistration()">Register Now</button>
+      </div>
+  </form>
+<div class="text-center">Already have an account? <a href="/login">Sign in</a></div>
+</div>
+
+

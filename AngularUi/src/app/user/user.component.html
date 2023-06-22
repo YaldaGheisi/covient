@@ -1,0 +1,22 @@
+<div class="container">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th style="width: 10% ; text-align: center;">ID</th>
+          <th style="width: 20% ; text-align: center;">Firstname</th>
+          <th style="width: 20% ; text-align: center;">Lastname</th>
+          <th style="width: 20% ; text-align: center;">Email</th>
+          <th style="width: 30% ; text-align: center;">Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">{{ user_data ? user_data.id : '' }}</td>
+          <td style="text-align: center;">{{ user_data ? user_data.first_name  : '' }}</td>
+          <td style="text-align: center;">{{ user_data ? user_data.last_name  : '' }}</td>
+          <td style="text-align: center;">{{ user_data ? user_data.email  : ''}}</td>
+          <td style="text-align: center;">{{ user_data ? user_data.address  : ''}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

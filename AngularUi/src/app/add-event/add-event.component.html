@@ -1,0 +1,38 @@
+<div class="container">
+    <form (submit)="addEvent()">
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" class="form-control" id="date" required [(ngModel)]="newEvent.date" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="start_time">Start Time:</label>
+        <input type="time" class="form-control" id="start_time" required [(ngModel)]="newEvent.start_time" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="end_time">End Time:</label>
+        <input type="time" class="form-control" id="end_time" required [(ngModel)]="newEvent.end_time" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="code">Code:</label>
+        <input type="text" class="form-control" id="code" required [(ngModel)]="newEvent.code" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="region">Region:</label>
+        <input type="text" class="form-control" id="region" required [(ngModel)]="newEvent.region" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="parish">Parish:</label>
+        <input type="text" class="form-control" id="parish" required [(ngModel)]="newEvent.parish" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" class="form-control" id="city" required [(ngModel)]="newEvent.city" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" class="form-control" id="location" required [(ngModel)]="newEvent.location" [ngModelOptions]="{standalone: true}">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
