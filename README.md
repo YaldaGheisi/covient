@@ -1,5 +1,6 @@
 # Covient
-A web application to manage covid vaccination events in Louisiana
+A web application to manage covid vaccination events in Louisiana- VAX-UP.
+It designed basically by python programming in Django framework and Angular.
 
 Keywords: Web application, event management, event scheduling
 
