@@ -42,4 +42,4 @@ dependencies:
       - six==1.16.0
       - sqlparse==0.4.3
       - tzdata==2023.3
-prefix: /home/alimokhtari/anaconda3/envs/dj
+prefix: /Users/yaldagheisi/anaconda3/envs/dj
